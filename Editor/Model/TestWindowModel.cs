@@ -1,25 +1,22 @@
 ﻿using WellFired.Guacamole.Databinding.Unity.Editor;
-using System;
 using UnityEngine;
 
 namespace WellFired.Test1.Editor
 {
 	public class TestWindowModel : ObservableScriptableObject 
 	{
-		//[HideInInspector]
-		[SerializeField]private float currentSequenceDuration;
+		[SerializeField]private float _currentSequenceDuration;
 		public float CurrentSequenceDuration
 		{
-			get { return currentSequenceDuration; }
-			set { SetProperty<float>(ref currentSequenceDuration, value, "CurrentSequenceDuration"); }
+			get { return _currentSequenceDuration; }
+			set { SetProperty<float>(ref _currentSequenceDuration, value, "CurrentSequenceDuration"); }
 		}
-
-		//[HideInInspector]
-		[SerializeField]private string currentSequenceName;
+		
+		[SerializeField]private string _currentSequenceName;
 		public string CurrentSequenceName
 		{
-			get { return currentSequenceName; }
-			set { SetProperty<string>(ref currentSequenceName, value, "CurrentSequenceName"); }
+			get { return _currentSequenceName; }
+			set { SetProperty<string>(ref _currentSequenceName, value, "CurrentSequenceName"); }
 		}
 	}
 }

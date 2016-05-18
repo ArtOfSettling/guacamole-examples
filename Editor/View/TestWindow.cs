@@ -111,7 +111,7 @@ namespace WellFired.Test1.Editor
 				}
 			};
 
-			var assetPath = "Assets/guacamole-examples/Editor/WindowData.asset";
+			const string assetPath = "Assets/guacamole-examples/Editor/WindowData.asset";
 			var windowData = AssetDatabase.LoadAssetAtPath<TestWindowModel>(assetPath);
 			if(windowData == null) {
 				windowData = ScriptableObject.CreateInstance<TestWindowModel>();
