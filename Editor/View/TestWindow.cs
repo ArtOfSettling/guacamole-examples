@@ -20,7 +20,6 @@ namespace WellFired.Test1.Editor
 				TextColor = UIColor.Beige,
 				LabelColor = UIColor.Beige,
 				Text = "A Sequence",
-				Label = "Name",
 			};
 
 			Content = new AdjacentLayout {

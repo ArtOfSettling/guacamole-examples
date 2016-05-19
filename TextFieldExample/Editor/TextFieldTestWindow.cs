@@ -13,8 +13,7 @@ namespace WellFired.TextFieldTest.Editor
 			{
 				HorizontalLayout = LayoutOptions.Expand,
 				BackgroundColor = UIColor.White,
-				Text = "Text",
-				Label = "Example"
+				Text = "Text"
 			};
 
 			Content = textEntry;
