@@ -6,17 +6,38 @@ namespace WellFired.TextFieldTest.Editor
 	{
 		public TextFieldTestWindow()
 		{
-			BackgroundColor = UIColor.Grey;
 			Padding = new UIPadding(5);
 			
-			var textEntry = new TextEntry
+			var textEntryLeft = new TextEntry
 			{
-				HorizontalLayout = LayoutOptions.Expand,
 				BackgroundColor = UIColor.White,
-				Text = "Text"
+				Text = "LeftAlign"
 			};
 
-			Content = textEntry;
+			var textEntryCenter = new TextEntry
+			{
+				HorizontalTextAlign = UITextAlign.Midle,
+				BackgroundColor = UIColor.White,
+				Text = "CenterAlign"
+			};
+
+			var textEntryRight = new TextEntry
+			{
+				HorizontalTextAlign = UITextAlign.End,
+				BackgroundColor = UIColor.White,
+				Text = "RightAlign"
+			};
+
+			Content = new AdjacentLayout
+			{
+				Spacing = 5,
+				Children =
+				{
+					textEntryLeft,
+					textEntryCenter,
+					textEntryRight
+				}
+			};
 		}
 	}
 }
