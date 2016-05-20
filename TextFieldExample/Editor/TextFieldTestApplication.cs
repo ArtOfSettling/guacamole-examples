@@ -1,6 +1,4 @@
-﻿using WellFired.Guacamole;
-
-namespace WellFired.TextFieldTest.Editor
+﻿namespace WellFired.Guacamole.Examples.TextField
 {
 	public class TextFieldTestApplication
 	{

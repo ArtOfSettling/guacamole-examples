@@ -1,10 +1,8 @@
-﻿using WellFired.Guacamole;
-
-namespace WellFired.TextFieldTest.Editor
+﻿namespace WellFired.Guacamole.Examples.AdjacentLayoutTest
 {
-	public class TextFieldAlignTestWindow : Window
+	public class AdjacentLayoutTestWindow : Window
 	{
-		public TextFieldAlignTestWindow()
+		public AdjacentLayoutTestWindow()
 		{
 			Padding = new UIPadding(5);
 			

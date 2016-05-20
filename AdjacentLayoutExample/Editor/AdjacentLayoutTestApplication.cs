@@ -1,20 +1,20 @@
 ﻿using WellFired.Guacamole;
 
-namespace WellFired.TextFieldTest.Editor
+namespace WellFired.Guacamole.Examples.AdjacentLayoutTest
 {
-	public class TextFieldAlignTestApplication
+	public class AdjacentLayoutTestApplication
 	{
-		[UnityEditor.MenuItem("Window/guacamole/Test/TextFieldAlign")]
+		[UnityEditor.MenuItem("Window/guacamole/Test/AdjacentLayoutTest")]
 		static void OpenWindow()
 		{
 			var application = new Guacamole.Unity.Editor.Application();
 
 			var context = new Guacamole.Unity.Editor.ApplicationInitializationContext
 			{
-				MainContent = typeof(TextFieldAlignTestWindow),
+				MainContent = typeof(AdjacentLayoutTestWindow),
 				UIRect = new UIRect(50, 50, 600, 200),
 				MinSize = new UISize(260, 230),
-				Title = "TestFieldAlignTest"
+				Title = "AdjacentLayoutTest"
 			};
 
 			application.Launch(context);
