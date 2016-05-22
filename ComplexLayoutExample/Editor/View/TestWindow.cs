@@ -117,7 +117,7 @@ namespace WellFired.Test1.Editor
 				AssetDatabase.CreateAsset(windowData, assetPath);
 			}
 
-			BindingContext = new TestWindowViewModel { Model = windowData, };
+			BindingContext = new TestWindowViewModel { Model = windowData };
 
 			durationEntry.Bind(NumberEntry.NumberProperty, "CurrentSequenceDuration");
 			nameEntry.Bind(TextEntry.TextProperty, "CurrentSequenceName");

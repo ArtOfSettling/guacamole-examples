@@ -9,14 +9,14 @@ namespace WellFired.Test1.Editor
 		public float CurrentSequenceDuration
 		{
 			get { return _currentSequenceDuration; }
-			set { SetProperty<float>(ref _currentSequenceDuration, value, "CurrentSequenceDuration"); }
+			set { SetProperty(ref _currentSequenceDuration, value, "CurrentSequenceDuration"); }
 		}
 		
 		[SerializeField]private string _currentSequenceName;
 		public string CurrentSequenceName
 		{
 			get { return _currentSequenceName; }
-			set { SetProperty<string>(ref _currentSequenceName, value, "CurrentSequenceName"); }
+			set { SetProperty(ref _currentSequenceName, value, "CurrentSequenceName"); }
 		}
 	}
 }
