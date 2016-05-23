@@ -13,8 +13,7 @@ namespace WellFired.Guacamole.Examples.TwoWayBinding
 			
 			var boundTextEntry = new TextEntry
 			{
-				BackgroundColor = UIColor.White,
-				Text = "SampleText"
+				BackgroundColor = UIColor.White
 			};
 
 			Content = boundTextEntry;

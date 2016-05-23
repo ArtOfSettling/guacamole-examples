@@ -11,4 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f0fe36cd05ff34fb7d881b2dd32cfc, type: 3}
   m_Name: WindowData
   m_EditorClassIdentifier: 
-  _boundText: 
+  _boundText: Initial Text
