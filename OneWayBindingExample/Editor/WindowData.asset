@@ -8,8 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f564cdeddd5cf46a6a06740688a5ce2e, type: 3}
+  m_Script: {fileID: 11500000, guid: e76a3d843e671f544b4cb14b4bb8e182, type: 3}
   m_Name: WindowData
   m_EditorClassIdentifier: 
-  currentSequenceDuration: 0
-  currentSequenceName: 
+  _boundText: Initial Text

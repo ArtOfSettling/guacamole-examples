@@ -20,7 +20,6 @@ namespace WellFired.Test1.Editor
 				TextColor = UIColor.Beige,
 				LabelColor = UIColor.Beige,
 				Text = "A Sequence",
-				Label = "Name",
 			};
 
 			Content = new AdjacentLayout {
@@ -111,14 +110,14 @@ namespace WellFired.Test1.Editor
 				}
 			};
 
-			var assetPath = "Assets/guacamole-examples/Editor/WindowData.asset";
+			const string assetPath = "Assets/guacamole-examples/Editor/WindowData.asset";
 			var windowData = AssetDatabase.LoadAssetAtPath<TestWindowModel>(assetPath);
 			if(windowData == null) {
 				windowData = ScriptableObject.CreateInstance<TestWindowModel>();
 				AssetDatabase.CreateAsset(windowData, assetPath);
 			}
 
-			BindingContext = new TestWindowViewModel { Model = windowData, };
+			BindingContext = new TestWindowViewModel { Model = windowData };
 
 			durationEntry.Bind(NumberEntry.NumberProperty, "CurrentSequenceDuration");
 			nameEntry.Bind(TextEntry.TextProperty, "CurrentSequenceName");

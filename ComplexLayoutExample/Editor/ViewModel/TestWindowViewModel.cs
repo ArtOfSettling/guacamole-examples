@@ -2,13 +2,9 @@
 
 namespace WellFired.Test1.Editor
 {
-	public class TestWindowViewModel :  ObservableBase
+	public class TestWindowViewModel : ObservableBase
 	{
-		public TestWindowModel Model 
-		{ 
-			get; 
-			set; 
-		}
+		public TestWindowModel Model { get; set; }
 
 		public float CurrentSequenceDuration
 		{
