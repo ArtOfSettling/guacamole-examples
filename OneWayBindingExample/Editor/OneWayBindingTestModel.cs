@@ -3,7 +3,7 @@ using WellFired.Guacamole.Databinding.Unity.Runtime;
 
 namespace WellFired.Guacamole.Examples.TwoWayBinding
 {
-	public class TwoWayBindingTestModel : ObservableScriptableObject
+	public class OneWayBindingTestModel : ObservableScriptableObject
 	{
 		[HideInInspector] [SerializeField] private string _boundText = "Initial Text";
 

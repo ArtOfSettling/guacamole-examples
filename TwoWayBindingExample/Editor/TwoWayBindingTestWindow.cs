@@ -26,7 +26,7 @@ namespace WellFired.Guacamole.Examples.TwoWayBinding
 				AssetDatabase.CreateAsset(windowData, assetPath);
 			}
 
-			BindingContext = new TwoWayBindingTestViewModel { Model = windowData };
+			BindingContext = windowData;
 
 			boundTextEntry.Bind(TextEntry.TextProperty, "BoundText", BindingMode.TwoWay);
 		}
