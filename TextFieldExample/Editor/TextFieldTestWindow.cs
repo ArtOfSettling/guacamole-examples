@@ -4,11 +4,12 @@
 	{
 		public TextFieldTestWindow()
 		{
+			BackgroundColor = UIColor.White;
 			Padding = new UIPadding(5);
 
 			Content = new TextEntry
 			{
-				BackgroundColor = UIColor.White,
+				BackgroundColor = UIColor.Beige,
 				Text = "Test"
 			};
 		}
