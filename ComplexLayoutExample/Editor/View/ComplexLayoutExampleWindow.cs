@@ -45,27 +45,68 @@
 						}
 					},
 					new AdjacentLayout {
-						BackgroundColor = UIColor.Tomato,
+						BackgroundColor = _darkerBackgroundColor,
 						Orientation = OrientationOptions.Horizontal,
 						Spacing = 5,
-						Padding = 5,
+						Padding = 6,
+						CornerRadius = 8.0,
 						Children = {
-							new TextEntry {
-								BackgroundColor = UIColor.Burlywood,
-								TextColor = UIColor.Beige,
-								Text = "A Sequence",
+							new AdjacentLayout {
+								BackgroundColor = _buttonBorder,
+								Orientation = OrientationOptions.Horizontal,
+								Padding = 2,
+								Spacing = 3,
+								CornerRadius = 8.0,
+								Children = {
+									new Label {
+										Text = "Name",
+										CornerRadius = 8.0,
+										CornerMask = CornerMask.Left
+									},
+									new TextEntry {
+										Text = "Sequence",
+										CornerRadius = 8.0,
+										CornerMask = CornerMask.Right
+									}
+								}
 							},
-							new NumberEntry {
-								Number = 0,
-								Label = "Duration",
+							new AdjacentLayout {
+								BackgroundColor = _buttonBorder,
+								Orientation = OrientationOptions.Horizontal,
+								Padding = 2,
+								Spacing = 3,
+								CornerRadius = 8.0,
+								Children = {
+									new Label {
+										Text = "Duration",
+										CornerRadius = 8.0,
+										CornerMask = CornerMask.Left
+									},
+									new NumberEntry {
+										Number = 10,
+										CornerRadius = 8.0,
+										CornerMask = CornerMask.Right
+									}
+								}
 							},
-							new Button {
-								BackgroundColor = UIColor.Burlywood,
-								Text = "E"
-							},
-							new Button {
-								BackgroundColor = UIColor.Burlywood,
-								Text = "F"
+							new AdjacentLayout {
+								BackgroundColor = _buttonBorder,
+								Orientation = OrientationOptions.Horizontal,
+								Padding = 2,
+								Spacing = 3,
+								CornerRadius = 8.0,
+								Children = {
+									new Button {
+										CornerRadius = 8.0,
+										CornerMask = CornerMask.Left,
+										Text = "Duplicate"
+									},
+									new Button {
+										CornerRadius = 8.0,
+										CornerMask = CornerMask.Right,
+										Text = "Prefab"
+									}
+								}
 							}
 						}
 					}
