@@ -1,26 +1,79 @@
-﻿using UnityEditor;
-using UnityEngine;
-
-namespace WellFired.Guacamole.Examples.ComplexLayoutExample
+﻿namespace WellFired.Guacamole.Examples.ComplexLayoutExample
 {
 	public class ComplexLayoutExampleWindow : Window
 	{
+		public static readonly UIColor _backgroundColor = UIColor.FromRGB(70, 70, 70);
+		public static readonly UIColor _darkerBackgroundColor = UIColor.FromRGB(50, 50, 50);
+		public static readonly UIColor _buttonBorder = UIColor.FromRGB(88, 88, 88);
+
 		public ComplexLayoutExampleWindow()
 		{
-			BackgroundColor = UIColor.Black;
+			BackgroundColor = _backgroundColor;
+			Padding = new UIPadding(5, 5, 5, 5);
 
-			var durationEntry = new NumberEntry {
-				Number = 0,
-				Label = "Duration",
+			var header = new AdjacentLayout {
+				BackgroundColor = UIColor.Clear,
+				Spacing = 5,
+				Orientation = OrientationOptions.Horizontal,
+				Children = {
+					new AdjacentLayout {
+						BackgroundColor = _darkerBackgroundColor,
+						Orientation = OrientationOptions.Horizontal,
+						Spacing = 5,
+						Padding = 6,
+						CornerRadius = 8.0,
+						Children = {
+							new AdjacentLayout {
+								BackgroundColor = _buttonBorder,
+								Orientation = OrientationOptions.Horizontal,
+								Padding = 2,
+								Spacing = 3,
+								CornerRadius = 8.0,
+								Children = {
+									new Button {
+										CornerRadius = 8.0,
+										CornerMask = CornerMask.Left,
+										Text = "New"
+									},
+									new Button {
+										CornerRadius = 8.0,
+										CornerMask = CornerMask.Right,
+										Text = "Open"
+									}
+								}
+							}
+						}
+					},
+					new AdjacentLayout {
+						BackgroundColor = UIColor.Tomato,
+						Orientation = OrientationOptions.Horizontal,
+						Spacing = 5,
+						Padding = 5,
+						Children = {
+							new TextEntry {
+								BackgroundColor = UIColor.Burlywood,
+								TextColor = UIColor.Beige,
+								Text = "A Sequence",
+							},
+							new NumberEntry {
+								Number = 0,
+								Label = "Duration",
+							},
+							new Button {
+								BackgroundColor = UIColor.Burlywood,
+								Text = "E"
+							},
+							new Button {
+								BackgroundColor = UIColor.Burlywood,
+								Text = "F"
+							}
+						}
+					}
+				}
 			};
 
-			var nameEntry = new TextEntry { 
-				BackgroundColor = UIColor.Burlywood,
-				TextColor = UIColor.Beige,
-				LabelColor = UIColor.Beige,
-				Text = "A Sequence",
-			};
-
+			Content = header;
+			/*
 			Content = new AdjacentLayout {
 				Orientation = OrientationOptions.Vertical,
 				HorizontalLayout = LayoutOptions.Fill,
@@ -29,48 +82,7 @@ namespace WellFired.Guacamole.Examples.ComplexLayoutExample
 				Padding = 5,
 				Spacing = 5,
 				Children = {
-					new AdjacentLayout {
-						BackgroundColor = UIColor.Chocolate,
-						Orientation = OrientationOptions.Horizontal,
-						Spacing = 5,
-						Padding = 5,
-						Children = {
-							new AdjacentLayout {
-								BackgroundColor = UIColor.Tomato,
-								Orientation = OrientationOptions.Horizontal,
-								Spacing = 5,
-								Padding = 5,
-								Children = {
-									new Button { 
-										BackgroundColor = UIColor.Burlywood,
-										Text = "A",
-									},
-									new Button { 
-										BackgroundColor = UIColor.Burlywood,
-										Text = "B",
-									},
-								},
-							},
-							new AdjacentLayout {
-								BackgroundColor = UIColor.Tomato,
-								Orientation = OrientationOptions.Horizontal,
-								Spacing = 5,
-								Padding = 5,
-								Children = {
-									nameEntry,
-									durationEntry,
-									new Button  { 
-										BackgroundColor = UIColor.Burlywood,
-										Text = "E",
-									},
-									new Button  { 
-										BackgroundColor = UIColor.Burlywood,
-										Text = "F",
-									},
-								},
-							},
-						},
-					},
+					header,
 					new AdjacentLayout {
 						Orientation = OrientationOptions.Vertical,
 						HorizontalLayout = LayoutOptions.Fill,
@@ -78,7 +90,7 @@ namespace WellFired.Guacamole.Examples.ComplexLayoutExample
 						Spacing = 5,
 						Padding = 5,
 						BackgroundColor = UIColor.Black,
-						Children = { 
+						Children = {
 							new AdjacentLayout {
 								Orientation = OrientationOptions.Horizontal,
 								Spacing = 5,
