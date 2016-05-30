@@ -1,12 +1,11 @@
 ﻿using UnityEditor;
 using UnityEngine;
-using WellFired.Guacamole;
 
-namespace WellFired.Test1.Editor
+namespace WellFired.Guacamole.Examples.ComplexLayoutExample
 {
-	public class TestWindow : Window
+	public class ComplexLayoutExampleWindow : Window
 	{
-		public TestWindow()
+		public ComplexLayoutExampleWindow()
 		{
 			BackgroundColor = UIColor.Black;
 
@@ -110,17 +109,19 @@ namespace WellFired.Test1.Editor
 				}
 			};
 
-			const string assetPath = "Assets/guacamole-examples/Editor/WindowData.asset";
-			var windowData = AssetDatabase.LoadAssetAtPath<TestWindowModel>(assetPath);
+			/*
+			const string assetPath = "Assets/guacamole-examples/ComplexLayoutExample/Editor/WindowData.asset";
+			var windowData = AssetDatabase.LoadAssetAtPath<ComplexLayoutExampleModel>(assetPath);
 			if(windowData == null) {
-				windowData = ScriptableObject.CreateInstance<TestWindowModel>();
+				windowData = ScriptableObject.CreateInstance<ComplexLayoutExampleModel>();
 				AssetDatabase.CreateAsset(windowData, assetPath);
 			}
 
-			BindingContext = new TestWindowViewModel { Model = windowData };
+			BindingContext = new ComplexLayoutExampleViewModel { Model = windowData };
 
 			durationEntry.Bind(NumberEntry.NumberProperty, "CurrentSequenceDuration");
 			nameEntry.Bind(TextEntry.TextProperty, "CurrentSequenceName");
+			*/
 		}
 	}
 }

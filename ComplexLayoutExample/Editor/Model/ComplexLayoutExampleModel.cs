@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using WellFired.Guacamole.Databinding.Unity.Runtime;
 
-namespace WellFired.Test1.Editor
+namespace WellFired.Guacamole.Examples.ComplexLayoutExample
 {
-	public class TestWindowModel : ObservableScriptableObject 
+	public class ComplexLayoutExampleModel : ObservableScriptableObject 
 	{
 		[SerializeField]private float _currentSequenceDuration;
 		public float CurrentSequenceDuration

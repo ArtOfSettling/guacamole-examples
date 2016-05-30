@@ -1,7 +1,6 @@
 ﻿using UnityEditor;
 using UnityEngine;
 using WellFired.Guacamole.Databinding;
-using WellFired.Test1.Editor;
 
 namespace WellFired.Guacamole.Examples.TwoWayBinding
 {

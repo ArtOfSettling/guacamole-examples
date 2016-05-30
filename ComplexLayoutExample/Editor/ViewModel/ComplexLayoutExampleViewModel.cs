@@ -1,10 +1,10 @@
 ﻿using WellFired.Guacamole.Databinding;
 
-namespace WellFired.Test1.Editor
+namespace WellFired.Guacamole.Examples.ComplexLayoutExample
 {
-	public class TestWindowViewModel : ObservableBase
+	public class ComplexLayoutExampleViewModel : ObservableBase
 	{
-		public TestWindowModel Model { get; set; }
+		public ComplexLayoutExampleModel Model { get; set; }
 
 		public float CurrentSequenceDuration
 		{
