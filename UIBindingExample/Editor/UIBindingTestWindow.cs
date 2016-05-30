@@ -1,7 +1,4 @@
-﻿using UnityEditor;
-using UnityEngine;
-
-namespace WellFired.Guacamole.Examples.UIBinding
+﻿namespace WellFired.Guacamole.Examples.UIBinding
 {
 	public class UIBindingTestWindow : Window
 	{
@@ -11,12 +8,15 @@ namespace WellFired.Guacamole.Examples.UIBinding
 			
 			var destinationElement = new TextEntry
 			{
-				BackgroundColor = UIColor.White
+				BackgroundColor = UIColor.White,
+				OutlineColor = UIColor.Black
 			};
 
 			var sourceElement = new Slider
 			{
-				BackgroundColor = UIColor.White
+				BackgroundColor = UIColor.White,
+				MinValue = 0,
+				MaxValue = 32
 			};
 
 			Content = new AdjacentLayout
@@ -30,7 +30,7 @@ namespace WellFired.Guacamole.Examples.UIBinding
 
 			destinationElement.BindingContext = sourceElement;
 
-			destinationElement.Bind(TextEntry.TextProperty, "Value");
+			destinationElement.Bind(CornerRadiusProperty, "Value");
 		}
 	}
 }
