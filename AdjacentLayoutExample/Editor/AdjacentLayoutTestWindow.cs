@@ -14,7 +14,7 @@
 
 			var textEntryMiddleStart = new TextEntry
 			{
-				HorizontalTextAlign = UITextAlign.Midle,
+				HorizontalTextAlign = UITextAlign.Middle,
 				BackgroundColor = UIColor.White,
 				Text = "h:Middle v:Start Align"
 			};
@@ -28,15 +28,15 @@
 
 			var textEntryStartMiddle = new TextEntry
 			{
-				VerticalTextAlign = UITextAlign.Midle,
+				VerticalTextAlign = UITextAlign.Middle,
 				BackgroundColor = UIColor.White,
 				Text = "h:Start v:Middle Align"
 			};
 
 			var textEntryMiddleMiddle = new TextEntry
 			{
-				HorizontalTextAlign = UITextAlign.Midle,
-				VerticalTextAlign = UITextAlign.Midle,
+				HorizontalTextAlign = UITextAlign.Middle,
+				VerticalTextAlign = UITextAlign.Middle,
 				BackgroundColor = UIColor.White,
 				Text = "h:Middle v:Middle Align"
 			};
@@ -44,7 +44,7 @@
 			var textEntryEndMiddle = new TextEntry
 			{
 				HorizontalTextAlign = UITextAlign.End,
-				VerticalTextAlign = UITextAlign.Midle,
+				VerticalTextAlign = UITextAlign.Middle,
 				BackgroundColor = UIColor.White,
 				Text = "h:Right v:Middle Align"
 			};
@@ -58,7 +58,7 @@
 
 			var textEntryMiddleEnd = new TextEntry
 			{
-				HorizontalTextAlign = UITextAlign.Midle,
+				HorizontalTextAlign = UITextAlign.Middle,
 				VerticalTextAlign = UITextAlign.End,
 				BackgroundColor = UIColor.White,
 				Text = "h:Middle v:End Align"

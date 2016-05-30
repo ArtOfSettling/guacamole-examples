@@ -9,6 +9,7 @@
 
 			Content = new TextEntry
 			{
+				VerticalTextAlign = UITextAlign.Middle,
 				BackgroundColor = UIColor.Beige,
 				Text = "Test"
 			};
