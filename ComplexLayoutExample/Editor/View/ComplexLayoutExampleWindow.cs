@@ -20,7 +20,7 @@
 						BackgroundColor = _darkerBackgroundColor,
 						Orientation = OrientationOptions.Horizontal,
 						Spacing = 5,
-						Padding = 6,
+						Padding = 4,
 						CornerRadius = 8.0,
 						Children = {
 							new AdjacentLayout {
@@ -48,7 +48,7 @@
 						BackgroundColor = _darkerBackgroundColor,
 						Orientation = OrientationOptions.Horizontal,
 						Spacing = 5,
-						Padding = 6,
+						Padding = 4,
 						CornerRadius = 8.0,
 						Children = {
 							new AdjacentLayout {
